@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packing List Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Packing List</h1>
+    </header>
+    <main>
+        <form id="addItemForm">
+            <input type="text" id="itemInput" placeholder="Add a new item..." required>
+            <select id="categorySelect">
+                <option value="clothing">Clothing</option>
+                <option value="toiletries">Toiletries</option>
+                <option value="electronics">Electronics</option>
+                <option value="others">Others</option>
+            </select>
+            <button type="submit">Add Item</button>
+        </form>
+        <select id="filterSelect">
+            <option value="all">All Categories</option>
+            <option value="clothing">Clothing</option>
+            <option value="toiletries">Toiletries</option>
+            <option value="electronics">Electronics</option>
+            <option value="others">Others</option>
+        </select>
+        <button onclick="filterItems()">Filter</button>
+        <ul id="packingList"></ul>
+        <ul id="packingList"></ul>
+        </form>
+        <ul id="packingList"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
